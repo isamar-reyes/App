@@ -7,8 +7,15 @@ public class Usuario {
     String email;
     int edad;
 
-    public Usuario() {
+    public Usuario(int anInt, int cursorInt, int i, int anInt1, int edad) {
 
+    }
+
+    public Usuario(String nombre, String telefono, String email, int edad) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.email = email;
+        this.edad = edad;
     }
 
     public Usuario(int id, String nombre, String telefono, String email, int edad) {
@@ -20,7 +27,7 @@ public class Usuario {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(int id) {
